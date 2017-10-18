@@ -37,7 +37,8 @@ header footer {
 @media screen and (max-width: 500px) {
 
     header footer {
-    padding: 10px 0px 0px;
+        padding: 10px 0px 0px;
+        background-image: url("images/200w_d.gif");
     }
 
 }
