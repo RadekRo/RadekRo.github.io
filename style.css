@@ -1,0 +1,84 @@
+body {
+    background-color: #F3F3F3;
+}
+
+h1, h2, h3, nav.menu, span.menu, footer {
+    font-family: Share;
+    color: #040630;
+}
+
+p {
+    font-size: 16px;
+    padding: 3px 0px;
+}
+
+p.title {
+    font-size: 21px;
+}
+
+.text-color-marker {
+    color: orange;
+}
+
+header {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+header footer {
+    background-image: url("images/giphy-downsized-large.gif");
+    height: 100px;
+    font-family: 'Press Start 2P', cursive;
+    padding: 30px 0px 0px;
+    color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+
+    header footer {
+    padding: 10px 0px 0px;
+    }
+
+}
+
+
+main {
+    width: 1200px;
+}
+
+footer {
+    font-size: 20px;
+    text-align: center;
+    border-top: 1px solid #000;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+nav.menu {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    border-bottom: 1px solid #000;
+}
+
+span.menu {
+    margin: 0px 1px;
+    padding: 5px 10px;
+    width: 50px;
+}
+
+span.menu:hover {
+    background-color: #000100;
+    cursor: pointer;
+    border-radius: 6px;
+    color: #1A6D21;
+    opacity: 0.8;
+}
+
