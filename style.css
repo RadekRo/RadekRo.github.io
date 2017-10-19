@@ -29,7 +29,7 @@ header {
 }
 
 
-header footer {
+header div {
     background-image: url("images/giphy-downsized-large.gif");
     height: 100px;
     font-family: 'Press Start 2P', cursive;
