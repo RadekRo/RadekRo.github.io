@@ -1,13 +1,32 @@
+/*
+Colors used in project:
+
+mixed:
+
+#F3F3F3
+#333333
+#001331
+#006bc3
+#64b1e7
+#FFFFFF
+#000000
+
+standard:
+
+yellow
+
+*/
+
 body {
     background-color: #F3F3F3;
-    font-family: Share;
-    color: #040630;
+    font-family: 'PT Sans', sans-serif;
+    color: #001331;
     text-decoration: none;
 }
 
 p {
     font-size: 16px;
-    padding: 3px 0px;
+    padding: 5px 0;
 }
 
 p.title {
@@ -15,12 +34,83 @@ p.title {
 }
 
 p.paragraph {
-    font-size: 19px;
-    padding: 20px 0px;
+    font-size: 17px;
+    padding: 20px 0 10px;
+    line-height: 24px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+img {
+
+}
+
+div.mind {
+    padding: 0 0 10px;
+    margin-bottom: 5px;
+}
+
+div.knowledge {
+    display: block;
+    float: left;
+    font-size: 16px;
+    padding: 37px 0 0;
+    color: #F3F3F3;
+    margin: 10px 5px 0 0;
+    border-radius: 80px;
+    width: 90px;
+    height: 53px;
+    text-align: center;
+    cursor: default;
+}
+
+div.language {
+    background: linear-gradient(#006bc3,#001331);
+}
+
+div.tools {
+    background-color: #001331;
+}
+
+div.system  {
+    background-color: #333;
+}
+
+div.clear {
+    clear: both;
+}
+
+div.sidebar {
+    position: fixed;
+    right: -95px;
+    top: 10px;
+    width: 120px;
+    height: 105px;
+    background-color: #001331;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 3px 0 0 20px;
+    font-size: 30px;
+}
+
+div.sidebar:hover {
+    right: 0;
+}
+
+a.sidebar {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+a.sidebar:hover {
+    color: #64b1e7;
 }
 
 .text-color-marker {
-    color: orange;
+    color: yellow;
 }
 
 header {
@@ -30,11 +120,11 @@ header {
 
 
 header div {
-    background-image: url("images/giphy-downsized-large.gif");
+    background-image: url("images/portfolio-background.gif");
     height: 100px;
     font-family: 'Press Start 2P', cursive;
     text-shadow: 3px 3px #000;
-    padding: 30px 0px 0px;
+    padding: 30px 0 0;
     color: #fff;
 }
 
@@ -49,30 +139,42 @@ main {
         width: 92%;
         margin: auto;
     }
+    div.sidebar {
+        top: 50px;
+    }
 }
 
 @media screen and (max-width: 500px) {
 
     header div {
-        padding: 10px 0px 0px;
-        background-image: url("images/200w_d.gif");
+        padding: 10px 0 0;
+    }
+    div.sidebar {
+        top: 80px;
     }
 }
 
 footer {
     font-size: 20px;
     text-align: center;
-    background-color: #1A6D21;
-    padding: 10px 0px;
+    background-color: #001331;
+    padding: 5px 0;
     color: #fff;
 }
 
 h1 {
     font-size: 40px;
+    letter-spacing: 3px;
 }
 
 h2 {
     font-size: 20px;
+}
+
+h2.portfolio {
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 h3 {
@@ -81,29 +183,43 @@ h3 {
 }
 
 i {
-    color: #1A6D21;
+    color: #001331;
+}
+
+i.sidebar {
+    color: #fff;
 }
 
 nav.menu {
     margin-top: 10px;
     padding-bottom: 10px;
-    font-size: 22px;
+    font-size: 19px;
     border-bottom: 1px solid #000;
 }
 
 a.menu {
-    margin: 0px 1px;
+    margin: 0 1px;
     padding: 5px 10px;
     width: 50px;
     text-decoration: none;
-    color: #040630;
+    color: #006bc3;
+    border-radius: 9px;
 }
 
 a.menu:hover {
-    background-color: #000100;
+    background: linear-gradient(#006bc3,#001331);
     cursor: pointer;
-    border-radius: 6px;
-    color: #1A6D21;
+    color: #fff;
     opacity: 0.8;
 }
 
+a.link {
+    color: #006bc3;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.divider {
+    border-top: 1px dotted #006bc3;
+    padding-top: 15px;
+}
