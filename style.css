@@ -44,7 +44,11 @@ p.paragraph {
 }
 
 img {
-
+    width: 170px;
+    height: 170px;
+    border-radius: 170px;
+    box-shadow: 1px 1px 3px #001331;
+    margin: 5px;
 }
 
 div.mind {
@@ -76,6 +80,12 @@ div.tools {
 
 div.system  {
     background-color: #333;
+}
+
+div.css {
+    background-color: #555;
+    height: 40px;
+    width: 40px;
 }
 
 div.clear {
