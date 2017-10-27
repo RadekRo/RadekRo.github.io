@@ -51,6 +51,13 @@ img {
     margin: 5px;
 }
 
+img.webpage {
+    width: 120px;
+    height: 120px;
+    border-radius: 170px;
+    margin: 5px 15px 0px 0px;
+}
+
 div.mind {
     padding: 0 0 10px;
     margin-bottom: 5px;
@@ -107,6 +114,12 @@ div.sidebar {
 
 div.sidebar:hover {
     right: 0;
+}
+
+div.webpage {
+    margin: 10px 0px;
+    clear: both;
+    padding: 5px 0px;
 }
 
 a.sidebar {
@@ -231,5 +244,6 @@ a.link {
 
 .divider {
     border-top: 1px dotted #006bc3;
+    margin-top: 15px;
     padding-top: 15px;
 }
