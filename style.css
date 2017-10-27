@@ -49,6 +49,7 @@ img {
     border-radius: 170px;
     box-shadow: 1px 1px 3px #001331;
     margin: 5px;
+    float: right;
 }
 
 img.webpage {
@@ -56,6 +57,7 @@ img.webpage {
     height: 120px;
     border-radius: 170px;
     margin: 5px 15px 0px 0px;
+    float: left;
 }
 
 div.mind {
