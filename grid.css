@@ -1,0 +1,85 @@
+/* Mixins */
+/* Main parameters */
+.row {
+  margin: 0 auto;
+  margin-top: 2px; }
+  .row:after {
+    display: block;
+    clear: both;
+    content: ''; }
+
+[class^="col-"] {
+  float: left;
+  margin-right: 1%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #E3E3E3; }
+  [class^="col-"]:last-child {
+    margin-right: 0; }
+
+/* Columns - automatically calculated */
+.col-1 {
+  width: 7.4166666667%; }
+
+.col-2 {
+  width: 15.8333333333%; }
+
+.col-3 {
+  width: 24.25%; }
+
+.col-4 {
+  width: 32.6666666667%; }
+
+.col-5 {
+  width: 41.0833333333%; }
+
+.col-6 {
+  width: 49.5%; }
+
+.col-7 {
+  width: 57.9166666667%; }
+
+.col-8 {
+  width: 66.3333333333%; }
+
+.col-9 {
+  width: 74.75%; }
+
+.col-10 {
+  width: 83.1666666667%; }
+
+.col-11 {
+  width: 91.5833333333%; }
+
+.col-12 {
+  width: 100%; }
+
+/* @media responsive system
+
+mobile:
+xs < 576px
+sm > 576px
+
+tablet:
+md > 768px
+
+desktop:
+lg > 992px
+xl > 1200px
+
+*/
+@media screen and (max-width: 576px) {
+  .row {
+    width: 100%;
+    margin: 0; }
+
+  [class^="col-"] {
+    width: 100%;
+    margin: 2px 0 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #D3D3D3; } }
+
+/*# sourceMappingURL=grid.css.map */

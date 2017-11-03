@@ -1,0 +1,97 @@
+/* Mixins */
+
+@mixin boxSize($option) {
+  -webkit-box-sizing: $option;
+  -moz-box-sizing: $option;
+  box-sizing: $option;
+}
+
+/* Main parameters */
+
+$grid-spacing: 1%; // distance between cols
+$row-spacing: 2px; // distance between rows
+
+.row {
+  margin: 0 auto;
+  margin-top: $row-spacing;
+
+  &:after {
+    display: block;
+    clear: both;
+    content:'';
+  }
+}
+
+[class^="col-"] {
+  float: left;
+  margin-right: $grid-spacing;
+  @include boxSize(border-box);
+  background: #E3E3E3;
+
+  &:last-child {
+    margin-right:0;
+  }
+}
+
+
+
+/* Columns - automatically calculated */
+
+.col-1   { width:(100% / 12) - ($grid-spacing * 11 / 12); }
+.col-2   { width:(100% / 6) - ($grid-spacing * 10 / 12); }
+.col-3   { width:(100% / 4) - ($grid-spacing * 9 / 12); }
+.col-4   { width:(100% / 3) - ($grid-spacing * 8 / 12); }
+.col-5   { width:(100% / 2.4) - ($grid-spacing * 7 / 12); }
+.col-6   { width:(100% / 2) - ($grid-spacing * 6 / 12); }
+.col-7   { width:(100% / 1.714285714285714) - ($grid-spacing * 5 / 12); }
+.col-8   { width:(100% / 1.5) - ($grid-spacing * 4 / 12); }
+.col-9   { width:(100% / 1.333333333333333) - ($grid-spacing * 3 / 12); }
+.col-10  { width:(100% / 1.2) - ($grid-spacing * 2 / 12); }
+.col-11  { width:(100% / 1.090909090909091) - ($grid-spacing * 1 / 12); }
+.col-12  { width:100%; }
+
+/* @media responsive system
+
+mobile:
+xs < 576px
+sm > 576px
+
+tablet:
+md > 768px
+
+desktop:
+lg > 992px
+xl > 1200px
+
+*/
+
+@media screen and (max-width: 576px) {
+
+  .row {
+    width: 100%;
+    margin: 0;
+  }
+
+  [class^="col-"] {
+    width: 100%;
+    margin: $row-spacing 0 0 0;
+    @include boxSize(border-box);
+    background: #D3D3D3;
+  }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+}
+
+@media screen and (min-width: 993 px) and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1201px) {
+
+}
