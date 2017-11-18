@@ -16,13 +16,9 @@ body {
   text-decoration: none; }
 
 p {
-  font-size: 16px;
-  padding: 5px 0;
-  display: inline; }
-
-p.title {
   font-size: 21px;
-  line-height: 35px; }
+  line-height: 35px;
+  display: inline; }
 
 p.paragraph {
   font-size: 17px;
