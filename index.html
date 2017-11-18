@@ -5,39 +5,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Radosław Rocławski | Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="sidebar">
-        <a href="#" class="sidebar"><i class="fa fa-home sidebar" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Home</a><br>
-        <a href="http://www.github.com/radekro" target="_blank" class="sidebar"><i class="fa fa-github sidebar" aria-hidden="true">
+<div class="sidebar">
+    <a href="#" class="sidebar"><i class="fa fa-home sidebar" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Home</a><br>
+    <a href="http://www.github.com/radekro" target="_blank" class="sidebar"><i class="fa fa-github sidebar" aria-hidden="true">
         </i>&nbsp;&nbsp;&nbsp;GitHub</a><br/>
-        <a href="https://www.linkedin.com/in/rados%C5%82aw-roc%C5%82awski-844ba578/" target="_blank" class="sidebar">
-            <i class="fa fa-linkedin-square sidebar" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;LinkedIn</a><br>
+    <a href="https://www.linkedin.com/in/rados%C5%82aw-roc%C5%82awski-844ba578/" target="_blank" class="sidebar">
+        <i class="fa fa-linkedin-square sidebar" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;LinkedIn</a><br>
 
-    </div>
+</div>
 
-    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <h1>Radosław Rocławski</h1>
-        <h2>Junior Frontend Developer</h2>
-        <h2 class="portfolio"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i> PORTFOLIO</h2>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#bio">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projekty">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#linki">Links</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontakt">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-        <nav class="menu">
-            <i class="fa fa-th-list fa-1x"></i>&nbsp;&nbsp;
-            <a href="#bio" class="menu">Bio</a>
-            <a href="#projekty" class="menu">Projects</a>
-            <a href="#linki" class="menu">Links</a>
-            <a href="#kontakt" class="menu">Contact</a>
-        </nav>
+<header>
 
-        <div>
+    <h1>Radosław Rocławski</h1>
+    <h2>Junior Frontend Developer</h2>
+    <h2 class="portfolio"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i> PORTFOLIO</h2>
+
+    <!--<nav class="menu">-->
+    <!--<i class="fa fa-th-list fa-1x"></i>&nbsp;&nbsp;-->
+    <!--<a href="#bio" class="menu">Bio</a>-->
+    <!--<a href="#projekty" class="menu">Projects</a>-->
+    <!--<a href="#linki" class="menu">Links</a>-->
+    <!--<a href="#kontakt" class="menu">Contact</a>-->
+    <!--</nav>-->
+
+        <div class="main-title">
             <p>Developing is the stage of Art.<br/>
-            Meet <span class="text-color-marker">the Artist.</span></p>
+                Meet <span class="text-color-marker">the Artist.</span></p>
         </div>
 
     </header>
@@ -123,7 +147,10 @@
     <footer>
         &copy; 2017 Radosław "Radi" Rocławski
     </footer>
-
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 
 </html>

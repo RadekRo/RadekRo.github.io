@@ -91,7 +91,7 @@ div.rwd {
 
 div.sidebar {
   position: fixed;
-  right: -95px;
+  right: -70px;
   top: 10px;
   width: 120px;
   height: 105px;
@@ -115,6 +115,10 @@ div.webpage {
   clear: both;
   padding: 5px 0; }
 
+.navbar {
+  position: fixed;
+  z-index: 3; }
+
 /* IMG styles */
 a.sidebar {
   text-decoration: none;
@@ -132,7 +136,7 @@ header {
   margin-top: 10px;
   text-align: center; }
 
-header div {
+header div.main-title {
   background-image: url("images/portfolio-background.gif");
   height: 200px;
   font-family: 'Press Start 2P', cursive;
