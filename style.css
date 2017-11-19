@@ -119,6 +119,17 @@ div.webpage {
   position: fixed;
   z-index: 3; }
 
+.skills {
+  width: 10%;
+  float: left; }
+
+.progress {
+  width: 50%;
+  float: left; }
+
+.halo {
+  margin: 10px 0; }
+
 /* IMG styles */
 a.sidebar {
   text-decoration: none;
