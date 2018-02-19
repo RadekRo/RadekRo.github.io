@@ -26,7 +26,19 @@ body {
   background-size: 100% 100%;
   background-image: url("../images/portfolio-background.gif");
   background-repeat: no-repeat;
-  height: 120px; }
+  height: 150px; }
+
+.bio-info {
+  text-align: center;
+  margin-top: 10px; }
+  .bio-info h1 {
+    font-size: 25px;
+    font-weight: bold; }
+  .bio-info h2 {
+    font-size: 18px; }
+  .bio-info h3 {
+    font-size: inherit;
+    font-style: italic; }
 
 .shadow_frame {
   border: 1px solid #C3C3C3;
@@ -35,11 +47,21 @@ body {
 .blue {
   background-color: blue; }
 
-img {
+nav img {
   width: 35px;
   height: 35px;
   border-radius: 35px;
   border: 2px solid #FFF;
   margin: 0 5px; }
+
+.bio-photo {
+  display: flex;
+  justify-content: center;
+  margin-top: -60px; }
+  .bio-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    border: 3px solid #FFF; }
 
 /*# sourceMappingURL=style.css.map */
