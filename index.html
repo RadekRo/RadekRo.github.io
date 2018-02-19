@@ -5,124 +5,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Radosław Rocławski | Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Press+Start+2P" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./external/bootstrap.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
-    <div class="sidebar">
-        <a href="#" class="sidebar"><i class="fa fa-home sidebar" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Home</a><br>
-        <a href="http://www.github.com/radekro" target="_blank" class="sidebar"><i class="fa fa-github sidebar" aria-hidden="true">
-        </i>&nbsp;&nbsp;&nbsp;GitHub</a><br/>
-        <a href="https://www.linkedin.com/in/rados%C5%82aw-roc%C5%82awski-844ba578/" target="_blank" class="sidebar">
-            <i class="fa fa-linkedin-square sidebar" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;LinkedIn</a><br>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+        <a class="navbar-brand" href="#"><img src="./images/portret.jpg"> Radosław Rocławski / Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">GitHub Activity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+            <div class="form-inline">
+                <a href=""><i class="fab fa-github fa-2x fa-fw"></i></a>
+                <a href=""><i class="fab fa-linkedin fa-2x fa-fw"></i></a>
+            </div>
+        </div>
+    </nav>
 
+    <div class="container fixed-margin">
+        <div class="row justify-content-between no-gutters">
+            <div class="col-12 col-md-7 shadow_frame">
+                   TEST
+            </div>
+            <div class="col-12 col-md-5">
+                Lorem ipusm
+            </div>
+        </div>
     </div>
-
-    <header>
-
-        <h1>Radosław Rocławski</h1>
-        <h2>Junior Frontend Developer</h2>
-        <h2 class="portfolio"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i> PORTFOLIO</h2>
-
-        <nav class="menu">
-            <i class="fa fa-th-list fa-1x"></i>&nbsp;&nbsp;
-            <a href="#bio" class="menu">Bio</a>
-            <a href="#projekty" class="menu">Projects</a>
-            <a href="#linki" class="menu">Links</a>
-            <a href="#kontakt" class="menu">Contact</a>
-        </nav>
-
-        <div>
-            <p>Developing is the stage of Art.<br/>
-            Meet <span class="text-color-marker">the Artist.</span></p>
-        </div>
-
-    </header>
-
-
-    <main>
-
-        <h3 id="bio"><i class="fa fa-th-list fa-1x"></i>&nbsp;&nbsp;Bio</h3>
-        <p class="paragraph"><img src="images/portret.jpg" alt="Photo of an author"> My name is Radek Rocławski. My friends call me Radi. I was born in Gdańsk, Poland.
-            As you see - freedom flows in my veins. Freedom means open, creative mind. Adaptive to any environment.
-            That is what fluids my projects. Freshness, creativity, clearness - worth each coin issued.
-            I am now a student of infoShare Academy which will help me sort out my developer's workshop.
-            If you need a natural born programmer for your project - HERE I AM.<br>If developing is the stage of art. I am
-            <a class="bold">the Artist</a>.
-            <br><a class="bold">I am also interested in &rarr;</a> football, athletic, games, fantasy and car driving.
-            <br><br>Checkout my current developer's skills &darr;</p>
-
-        <div class="mind">
-            <div class="knowledge language">HTML5</div><div class="knowledge language">CSS3</div>
-            <div class="knowledge language">Sass</div><div class="knowledge language">FlexBox</div>
-            <div class="knowledge language">Bootstrap</div><div class="knowledge language">Java</div>
-            <div class="knowledge language">PHP5</div><div class="knowledge language">jQuery</div>
-            <div class="knowledge language">React</div><div class="knowledge language">Ajax</div>
-            <div class="knowledge language">Bash</div>
-            <div class="knowledge tools">Scrum</div><div class="knowledge tools">GitHub</div>
-            <div class="knowledge tools">Jira</div><div class="knowledge tools">Webstorm</div>
-            <div class="knowledge tools">WordPress</div><div class="knowledge tools">Slack</div>
-            <div class="knowledge system">Windows</div>
-            <div class="knowledge system">Linux</div>
-            <div class="knowledge system">Android</div>
-            <div class="clear"></div>
-        </div>
-
-        <div class="divider">
-
-            <h3 id="projekty"><i class="fa fa-th-list fa-1x"></i>&nbsp;&nbsp;Projects</h3>
-            <div class="webpage">
-                <img src="images/ankaralab.jpg" class="webpage" alt="AnkaraLab.com webpage snapshot">
-                <p class="paragraph"><a class="bold">AnkaraLab.com &raquo; </a>
-                    <a href="http://www.ankaralab.com" class="link" target="_blank">http://www.ankaralab.com</a><br>Photo Laboratory Web Page.
-                    Ordering photo, calendars, etc. using web page and ftp transfer protocol. Created as one of the Ankara.pl Group Pages.
-                    Page created using: HTML, CSS, Java and PHP. This web page is still under my supervision. Thank's to
-                    infoShare Academy FrontEnd Course - will be updated soon.
-                </p>
-            </div>
-            <div class="webpage">
-                <img src="images/fabrykawizytowek.jpg" class="webpage" alt="Fabrykawizytowek.pl webpage snapshot">
-                <p class="paragraph"><a class="bold">Fabrykawizytowek.pl &raquo; </a>
-                    <a href="http://www.fabrykawizytowek.pl" class="link" target="_blank">http://www.fabrykawizytowek.pl</a><br>Web Page of Business Cards
-                     Printing House. Created as one of the Ankara.pl Group Pages. Page created using: HTML, CSS, Java and PHP. This web page is still under my supervision.
-                    Thank's to infoShare Academy FrontEnd Course - will be updated soon.
-                </p>
-            </div>
-
-
-        </div>
-        <div class="clear"></div>
-        <div class="divider">
-
-        <h3 id="linki"><i class="fa fa-th-list fa-1x"></i>&nbsp;&nbsp;Links</h3>
-        <p class="paragraph"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;&nbsp;LinkedIn Profile:
-            <a href="https://www.linkedin.com/in/rados%C5%82aw-roc%C5%82awski-844ba578/" class="link" target="_blank">
-            https://www.linkedin.com/in/rados%C5%82aw-roc%C5%82awski-844ba578/</a><br>
-            <i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;&nbsp;GitHub Profile: <a href="http://www.github.com/radekro" class="link" target="_blank">http://www.github.com/radekro</a>
-            <br><br><a class="bold">I am also following: &darr;</a><br>
-            <i class="fa fa-soccer-ball-o" aria-hidden="true"></i>&nbsp;&nbsp;Lechia Gdańsk Football Club - Home Page:
-            <a href="http://www.lechia.pl" target="_blank" class="link">http://www.lechia.pl</a>
-            <br><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;&nbsp;Booking.com - Trip Advisor:
-            <a href="http://www.booking.com" target="_blank" class="link">http://www.booking.com</a>
-        </p>
-
-        </div>
-        <div class="clear"></div>
-        <div class="divider">
-
-        <h3 id="kontakt"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Contact</h3>
-        <p class="paragraph">E-mail: <a href="mailto:r.roclawski@ankara.pl?subject=Contact-from-Portfolio" class="link">
-            r.roclawski@ankara.pl</a><br>Mobile: +48 518 223 664</p>
-
-        </div>
-    </main>
-
-    <footer>
-        &copy; 2017 Radosław "Radi" Rocławski
-    </footer>
+    <script type="text/javascript" src="./external/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./external/bootstrap.bundle.min.js"></script>
 
 </body>
 

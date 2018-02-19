@@ -1,0 +1,68 @@
+/* COLOR table */
+
+$black        : #000; /* 100% black */
+$darkgray     : #333; /* 70% black */
+$mediumgray   : #777; /* 30% black */
+$white        : #FFF; /* pure white - despite of screen contrast */
+$background   : #F3F3F3; /* dirty white */
+$deepblue     : #001331; /* deep blue */
+$blue         : #006bc3; /* standard */
+$lightblue    : #64b1e7; /* very light blue */
+$marker       : yellow; /* used to expose sth - only on dark backgrounds */
+
+/* MIXIN section */
+
+@mixin rotate($degree) {    /* rotation of an image/div */
+  transform: rotate($degree);
+  -moz-transform: rotate($degree); /* Mozilla */
+  -webkit-transform: rotate($degree); /* Safari */
+}
+
+@mixin corners($radius) {   /* corner roundings */
+  border-radius: $radius;
+  -webkit-border-radius: $radius; /* Mozilla */
+  -moz-border-radius: $radius; /* Safari */
+}
+
+body {
+    background-color: $background;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-decoration: none;
+}
+
+.form-inline a {
+    color: $mediumgray;
+
+    :hover {
+        color: $white;
+    }
+}
+
+.fixed-margin {
+  margin-top: 70px;
+}
+
+.bio-background {
+  background-size: 100% 100%;
+  background-image: url("../images/portfolio-background.gif");
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.shadow_frame {
+    border: 1px solid #C3C3C3;
+    box-shadow: 1px 1px 1px #D3D3D3;
+}
+
+.blue {
+    background-color: blue;
+}
+
+img {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    border: 2px solid $white;
+    margin: 0 5px;
+}
+

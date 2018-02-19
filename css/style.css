@@ -1,0 +1,45 @@
+/* COLOR table */
+/* 100% black */
+/* 70% black */
+/* 30% black */
+/* pure white - despite of screen contrast */
+/* dirty white */
+/* deep blue */
+/* standard */
+/* very light blue */
+/* used to expose sth - only on dark backgrounds */
+/* MIXIN section */
+body {
+  background-color: #F3F3F3;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-decoration: none; }
+
+.form-inline a {
+  color: #777; }
+  .form-inline a :hover {
+    color: #FFF; }
+
+.fixed-margin {
+  margin-top: 70px; }
+
+.bio-background {
+  background-size: 100% 100%;
+  background-image: url("../images/portfolio-background.gif");
+  background-repeat: no-repeat;
+  height: 150px; }
+
+.shadow_frame {
+  border: 1px solid #C3C3C3;
+  box-shadow: 1px 1px 1px #D3D3D3; }
+
+.blue {
+  background-color: blue; }
+
+img {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  border: 2px solid #FFF;
+  margin: 0 5px; }
+
+/*# sourceMappingURL=style.css.map */
