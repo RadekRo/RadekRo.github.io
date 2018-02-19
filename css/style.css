@@ -40,6 +40,15 @@ body {
     font-size: inherit;
     font-style: italic; }
 
+strong {
+  font-weight: bold; }
+
+.bio-about {
+  border-top: 1px solid #C3C3C3;
+  padding-left: 10px; }
+  .bio-about p {
+    margin-top: 10px; }
+
 .shadow_frame {
   border: 1px solid #C3C3C3;
   box-shadow: 1px 1px 1px #D3D3D3; }
