@@ -49,6 +49,29 @@ strong {
   .bio-about p {
     margin-top: 10px; }
 
+.skills-languages {
+  padding-left: 10px; }
+
+.skills-title {
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #C3C3C3;
+  border-top: 1px solid #C3C3C3;
+  clear: both;
+  margin: 10px 0; }
+
+.skills-element {
+  margin: 10px 0; }
+  .skills-element .title {
+    font-size: 18px;
+    width: 25%;
+    float: left;
+    line-height: 18px;
+    clear: both; }
+
+span {
+  margin-bottom: 5px; }
+
 .shadow_frame {
   border: 1px solid #C3C3C3;
   box-shadow: 1px 1px 1px #D3D3D3; }
