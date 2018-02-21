@@ -1,7 +1,13 @@
+const $skillsProgressBar = $('.progress .progress-bar');
+
 function animateProgressBars() {
-    $('.progress .progress-bar').css('width', function() {
-        return $(this).attr('aria-valuenow') + '%';
-    }).delay(1000);
+    $skillsProgressBar
+        .css('transition-duration', '4s')
+        .css('width', function() { return $(this).attr('aria-valuenow') + '%'; });
 }
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+});
 
 $(document).on('ready', animateProgressBars());
