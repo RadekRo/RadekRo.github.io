@@ -26,7 +26,9 @@ body {
   background-size: 100% 100%;
   background-image: url("../images/portfolio-background.gif");
   background-repeat: no-repeat;
-  height: 150px; }
+  height: 150px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
 
 .bio-info {
   text-align: center;
@@ -74,7 +76,11 @@ span {
 
 .shadow_frame {
   border: 1px solid #C3C3C3;
-  box-shadow: 1px 1px 1px #D3D3D3; }
+  box-shadow: 1px 1px 1px #D3D3D3;
+  border-radius: 5px; }
+
+.top-margin {
+  margin-top: 10px; }
 
 .blue {
   background-color: blue; }
@@ -95,6 +101,14 @@ nav img {
     height: 120px;
     border-radius: 120px;
     border: 3px solid #FFF; }
+
+.webpages-title {
+  width: 100%;
+  padding: 3px 10px;
+  background-color: #333;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #FFF; }
 
 @media screen and (max-width: 990px) {
   .form-inline {
