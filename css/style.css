@@ -102,13 +102,20 @@ nav img {
     border-radius: 120px;
     border: 3px solid #FFF; }
 
-.webpages-title {
+.webpages-title, .webpages-footer {
   width: 100%;
   padding: 3px 10px;
   background-color: #333;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   color: #FFF; }
+
+.webpages-footer {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #777; }
 
 @media screen and (max-width: 990px) {
   .form-inline {
